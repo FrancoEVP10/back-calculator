@@ -7,7 +7,7 @@ CORS(app)
 @app.route('/calculate', methods=['POST'])
 def calculate():
     data = request.json.get('data')
-    g = 9.81  # Asumiendo la gravedad constante en m/s^2
+    g = 9.81  
 
     constants = []
     for item in data:
